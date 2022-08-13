@@ -1,6 +1,6 @@
 # ------
 # 
-# A simple moving average (SMA) calculates the averageof a selected range
+# A simple moving average (SMA) calculates the average of a selected range
 # of values by the number of values in that range
 #
 #       A1 + A2 + ... + An
@@ -12,7 +12,8 @@
 # n = the number of total values
 #
 # NOTE: Reason for not using numpy
-# numpy is great for large collections, however it is slower that a list for smaller collections
+# numpy is great for large collections, however it is slower than a list
+# when using it for smaller collections
 #
 #               Python List         Numpy Array
 # 10            7.796e-08 ms        2.939e-07 ms
@@ -22,8 +23,6 @@
 # 100000        2.505e-05 ms        5.409e-07 ms
 #
 # ------
-
-import numpy as np
 
 def calculate(values: list) -> float:
     if type(values) is not list:
